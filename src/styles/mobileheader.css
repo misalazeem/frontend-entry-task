@@ -1,0 +1,56 @@
+.mobile-header {
+  height: 232px;
+  background-image: url(../assets/BG-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  height: 100%;
+}
+
+.user-dropdown {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.header-container p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.search-input {
+  padding: 15px 10px 15px 40px;
+  border: 1px solid #d3d3d3;
+  width: 80%;
+  border-radius: 3px;
+  margin: 15px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
