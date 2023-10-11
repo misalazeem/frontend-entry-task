@@ -5,17 +5,22 @@
 @media screen and (min-width: 768px) {
   .side-bar-container {
     display: flex;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
     flex-direction: column;
     align-items: center;
     position: sticky;
     margin: 0;
     top: 0;
     height: 100vh;
-    padding-top: 1px;
-    background-color: #F1EDFD;
+    background-color: #f1edfd;
     padding: 20px;
   }
-  
+
+  .side-bar-container.active {
+    transform: translateX(0);
+  }
+
   .sidebar-logo {
     width: 38px;
   }
@@ -44,5 +49,17 @@
     justify-content: space-between;
     height: 70vh;
     padding: 40px 0;
+  }
+
+  .sidebar-icons-lower img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .sidebar-icons-upper img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
   }
 }

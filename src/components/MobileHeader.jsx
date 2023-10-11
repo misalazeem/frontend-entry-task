@@ -7,7 +7,7 @@ import '../styles/mobileheader.css';
 
 const MobileHeader = () => (
   <>
-    <div className="mobile-header">
+    <div className="mobile-header active">
       <div className="header-container">
         <div className="header-user-section">
           <img className="menu-icon" src={menuIcon} alt="menu" />
