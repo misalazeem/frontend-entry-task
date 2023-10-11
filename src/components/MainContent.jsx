@@ -27,6 +27,24 @@ const sectionsData = [
         arrowIcon,
         content: 'Generate the best blog post to fit your audience with just few clicks of a button',
       },
+      {
+        heading: 'Blog writng',
+        iconPath: editIcon,
+        arrowIcon,
+        content: 'Generate the best blog post to fit your audience with just few clicks of a button',
+      },
+      {
+        heading: 'Blog writng',
+        iconPath: editIcon,
+        arrowIcon,
+        content: 'Generate the best blog post to fit your audience with just few clicks of a button',
+      },
+      {
+        heading: 'Blog writng',
+        iconPath: editIcon,
+        arrowIcon,
+        content: 'Generate the best blog post to fit your audience with just few clicks of a button',
+      },
     ],
   },
   {

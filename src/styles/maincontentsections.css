@@ -18,3 +18,10 @@
 .card-container::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    overflow-x: unset;
+    flex-wrap: wrap;
+  }  
+}
