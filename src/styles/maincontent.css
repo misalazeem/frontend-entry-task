@@ -1,0 +1,18 @@
+.main-content-container {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+.main-content-container-heading {
+  margin: 20px 0;
+}
+
+.main-content-container-heading p {
+  margin: 0;
+}
+
+.main-content-container-heading h3 {
+  margin: 0 0 10px 0;
+}

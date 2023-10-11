@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.plusicon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    display: flex;
+  }
+
+  .right-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+  }
+}

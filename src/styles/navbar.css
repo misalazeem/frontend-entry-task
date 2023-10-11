@@ -1,0 +1,121 @@
+.top-nav-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.nav-bar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  background-color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.nav-bar-left.fade-in {
+  opacity: 1;
+}
+
+.nav-bar-left-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-container-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+
+.search-input-top {
+  padding: 15px 65px 15px 40px;
+  border: 1px solid #d3d3d3;
+  width: 80%;
+  border-radius: 3px;
+}
+
+.search-icon-top {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.search-icon-top-right {
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  transform: translateY(-50%);
+}
+
+.search-icon-top-right-2 {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.nav-bar-left button {
+  background-color: #754de8;
+  color: #fff;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.nav-bar-left button:hover {
+  background-color: #754de8;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.group-icons {
+  width: 78px;
+}
+
+.group-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  padding: 10px 20px;
+  background-color: #f1edfd;
+  border: 1px solid #d4c8f8;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.nav-bar-right.fade-in {
+  opacity: 1;
+}
+
+.nav-bar-right img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav-container {
+    display: none;
+  }
+}
