@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/maincontentsections.css';
 import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import Card from './Card';
 
 const MainContentSections = ({ heading, cardsData }) => {
@@ -15,7 +16,7 @@ const MainContentSections = ({ heading, cardsData }) => {
       <div className="card-container">
         {cardsData.map((section) => (
           <Card
-            key={section.id}
+            key={uuidv4()}
             heading={section.heading}
             iconPath={section.iconPath}
             arrowIcon={section.arrowIcon}

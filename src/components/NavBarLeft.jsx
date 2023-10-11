@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/navbar.css';
+import PropTypes from 'prop-types';
 import search from '../assets/Search.png';
 import search1 from '../assets/SearchBar1.png';
 import search2 from '../assets/SearchIcon2.png';
 import groupIcons from '../assets/Group.png';
 import bellIcon from '../assets/Bell.png';
 import calendarIcon from '../assets/Calendar.png';
-import avatar from '../assets/Avatar.png';
+import Auth from '../auth/auth';
 
-const NavBarLeft = () => {
+const NavBarLeft = ({ onSignOut }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Delay the fade-in effect
     const delayTimeout = setTimeout(() => {
       setShow(true);
-    }, 2000); // 2-second delay
+    }, 2000);
 
-    // Clear the timeout to prevent memory leaks
     return () => {
       clearTimeout(delayTimeout);
     };
   }, []);
+
+  const handleSignOut = () => {
+    onSignOut();
+  };
 
   return (
     <>
@@ -39,7 +42,9 @@ const NavBarLeft = () => {
           </span>
         </div>
         <div className="nav-bar-left-right">
-          <button alt="button" type="button">Create Content</button>
+          <button alt="button" type="button">
+            Create Content
+          </button>
           <div className="group-image-container">
             <img src={groupIcons} className="group-icons" alt="groupicons" />
           </div>
@@ -47,11 +52,19 @@ const NavBarLeft = () => {
       </div>
       <div className={`nav-bar-right ${show ? 'fade-in' : ''}`}>
         <img src={calendarIcon} alt="calendar" />
-        <img src={bellIcon} alt="calendar" />
-        <img src={avatar} alt="calendar" />
+        <img src={bellIcon} alt="bell" />
+        <Auth onSignOut={handleSignOut} />
       </div>
     </>
   );
+};
+
+NavBarLeft.propTypes = {
+  onSignOut: PropTypes.func,
+};
+
+NavBarLeft.defaultProps = {
+  onSignOut: () => {},
 };
 
 export default NavBarLeft;

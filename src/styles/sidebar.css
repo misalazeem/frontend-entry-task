@@ -57,6 +57,12 @@
     cursor: pointer;
   }
 
+  .sidebar-icons-lower button {
+    outline: none;
+    background: none;
+    border: none;
+  }
+
   .sidebar-icons-upper img:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
