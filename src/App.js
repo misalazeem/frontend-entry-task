@@ -1,22 +1,13 @@
-import './App.css';
-import MobileHeader from './components/MobileHeader';
-import MainContent from './components/MainContent';
-import SideBar from './components/SideBar';
-import NavBar from './components/NavBar';
-import DesktopHeader from './components/DesktopHeader';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './routes/Home';
 
-function App() {
-  return (
-    <div className="main-container">
-      <MobileHeader />
-      <SideBar />
-      <div className="right-page">
-        <NavBar />
-        <DesktopHeader />
-        <MainContent />
-      </div>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;
