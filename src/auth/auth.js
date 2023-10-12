@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { onAuthStateChanged, signOut, signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider } from '../config/firebase';
-import googleIcon from '../assets/googleIcon.png';
+import googleIcon from '../assets/googleIcon.svg';
 import avatar from '../assets/Avatar.png';
 
 const Auth = ({ onSignIn, onSignOut }) => {
